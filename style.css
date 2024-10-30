@@ -625,11 +625,24 @@ article p {
     left: calc(50% - 15px);
   }
 
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 725px) {
     html {
-      font-size: 30%;
+      font-size: 50%;
       width: 100vw;
       overflow-x: hidden;
+    }
+    .home {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    .home-img {
+      display: flex;
+      justify-content: center;
+    }
+    .home-content {
+      display: flex;
+      align-items: center;
     }
     .header {
       width: 100vw;
@@ -670,6 +683,92 @@ article p {
     .timeline-date {
       margin-left: 10%;
       margin-bottom: 5%;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    html {
+      font-size: 40%;
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    .home {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    .home-img {
+      display: flex;
+      justify-content: center;
+    }
+    .home-content {
+      display: flex;
+      align-items: center;
+    }
+    .header {
+      width: 100vw;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      padding-right: 10px;
+    }
+    .navbar a.active {
+      border-bottom: 1px solid var(--main-color);
+    }
+    .footer ul li a.active {
+      border-bottom: 1px solid var(--main-color);
+    }
+    .timeline-items::before {
+      left: 2%;
+      width: 1%;
+    }
+    .timeline-item:nth-child(odd) {
+      padding-right: 0;
+      text-align: left;
+    }
+    .timeline-item:nth-child(even) {
+      padding-left: 0;
+      text-align: left;
+    }
+    .timeline-dot img {
+      left: -1%;
+    }
+    .timeline-content {
+      margin-right: 0%;
+      margin-left: 10%;
+    }
+    .timeline-date {
+      margin-left: 10%;
+      margin-bottom: 5%;
+    }
+    @media screen and (max-width: 480px) {
+      html {
+        font-size: 30%;
+        overflow-x: hidden;
+      }
+
+      .home {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
+      .home-img {
+        display: flex;
+        justify-content: center;
+      }
+      .home-content {
+        display: flex;
+        align-items: center;
+      }
+      .header {
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+      }
     }
   }
 }
