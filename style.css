@@ -105,8 +105,10 @@ section {
 .logo span {
   text-shadow: 0 0 3rem var(--main-color);
 }
+/* 
+-----------------main Intro Page---------------- */
 
------------------main Intro Page---------------- .home {
+.home {
   display: flex;
   align-items: center;
   gap: 5%;
