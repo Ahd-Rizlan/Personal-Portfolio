@@ -1,3 +1,4 @@
+/* removing preset or default styles */
 * {
   margin: 0%;
   padding: 0%;
@@ -7,17 +8,38 @@
   outline: none;
   font-family: "poppins", sans-serif;
 }
+
+/* Pre Assaiging colors */
 :root {
   --bg-color: #b84800;
   --second-bg-color: #ffd63179;
   --text-color: white;
   --main-color: #fcd127;
 }
+
+/* ---------common css----------------- */
 html {
   font-size: 80%;
   width: 100vw;
   overflow-x: hidden;
 }
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+span {
+  color: var(--main-color);
+}
+section {
+  margin: 2%;
+  padding: 3%;
+}
+.heading {
+  font-size: 6rem;
+  text-align: center;
+  margin: 5% 0;
+}
+/* scroll bar */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -33,6 +55,8 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 10px var(--main-color);
 }
+/* make header nonsticky since we vant use js */
+/* -------header and navbar---------------- */
 .header {
   display: flex;
   flex-direction: row;
@@ -43,13 +67,6 @@ html {
   position: relative;
   width: 100vw;
   padding: 2%;
-}
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-span {
-  color: var(--main-color);
 }
 .navbar {
   display: flex;
@@ -89,11 +106,7 @@ span {
   text-shadow: 0 0 3rem var(--main-color);
 }
 
-section {
-  margin: 2%;
-  padding: 3%;
-}
-.home {
+-----------------main Intro Page---------------- .home {
   display: flex;
   align-items: center;
   gap: 5%;
@@ -203,6 +216,7 @@ section {
   background-color: var(--main-color);
   color: var(--bg-color);
 }
+/* ----------------------text animation related css------------- */
 .text-animation {
   font-size: 4rem;
   font-weight: 600;
@@ -234,6 +248,9 @@ section {
     content: "Creatio Developer";
   }
 }
+
+/* ----------------------education page related Css--------------- */
+
 .education {
   background-color: var(--second-bg-color);
   margin: 0%;
@@ -241,11 +258,7 @@ section {
   align-items: center;
   justify-items: center;
 }
-.heading {
-  font-size: 6rem;
-  text-align: center;
-  margin: 5% 0;
-}
+
 .education h2 {
   margin-bottom: 2%;
 }
@@ -326,6 +339,8 @@ section {
   font-weight: 500;
 }
 
+/* -------------------------Skills ------------------- */
+
 .superpower-items {
   display: flex;
   flex-wrap: wrap;
@@ -375,6 +390,8 @@ section {
   display: none;
 }
 
+/* ----------------------------blogPost Page ---------------- */
+
 .blogpost {
   background-color: var(--second-bg-color);
   margin: 0%;
@@ -421,6 +438,8 @@ section {
   color: var(--text-color);
 }
 
+/* -----------------Contact Form---------------------------- */
+
 .contact form {
   display: flex;
   flex-direction: column;
@@ -459,6 +478,8 @@ section {
 .contact form .btn {
   margin-top: 2rem;
 }
+
+/* ----------------------------Footer--------------------- */
 
 .footer {
   position: relative;
@@ -527,6 +548,8 @@ section {
   color: var(--text-color);
 }
 
+/* ---------------------------Blogpost Page---------------------- */
+
 .main-intro {
   display: flex;
   align-items: center;
@@ -534,6 +557,9 @@ section {
   padding: 2%;
   width: 100vw;
 }
+
+/* making both contents equally distributed so can manage the photot size */
+
 .headline {
   width: 50%;
 }
