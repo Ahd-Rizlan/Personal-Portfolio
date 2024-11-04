@@ -139,7 +139,6 @@ section {
 
 .home-img img {
   position: relative;
-  width: 100%;
   border-radius: 50%;
   top: 5%;
   width: 40rem;
@@ -713,6 +712,7 @@ article p {
       margin-bottom: 5%;
     }
   }
+
   @media screen and (max-width: 650px) {
     html {
       font-size: 40%;
@@ -772,6 +772,7 @@ article p {
       margin-left: 10%;
       margin-bottom: 5%;
     }
+
     @media screen and (max-width: 480px) {
       html {
         font-size: 30%;
