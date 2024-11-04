@@ -485,12 +485,12 @@ section {
   margin-top: 2rem;
 }
 
-/* .contact form input:valid,
+.contact form input:valid,
 .contact form textarea:valid {
   border-color: green;
-} */
-.contact form input:not()[type="submit"] {
-  border-color: green;
+}
+.contact form input[type="submit"] {
+  border-color: var(--bg-color);
 }
 
 /*-------------------------Footer--------------------- */
