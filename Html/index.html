@@ -318,11 +318,27 @@
       >
         <div class="input-group">
           <div class="input-box">
-            <input type="text" placeholder="Full name" name="Name" required />
+            <input
+              type="text"
+              placeholder="Full name"
+              name="Name"
+              pattern="[A-Za-z\s]"
+              title="Should only contain Alphabats"
+              required
+            />
             <input type="email" placeholder="Email" name="Email" required />
           </div>
           <div class="input-box">
-            <input type="tel" placeholder="Phone number" name="Number" />
+            <input
+              type="tel"
+              placeholder="Phone number"
+              name="Number"
+              maxlength="10"
+              min="0"
+              pattern="[0-9]{10}"
+              title="Phone number should be 10 digits long"
+              required
+            />
             <input type="text" placeholder="Subject" name="Subject" required />
           </div>
         </div>

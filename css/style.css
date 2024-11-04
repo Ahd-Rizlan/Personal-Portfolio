@@ -3,10 +3,12 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  /* to ensure that padding and border widths are included in the element's total width and height*/
   text-decoration: none;
   border: none;
   outline: none;
   font-family: "poppins", sans-serif;
+  /* mentioning the font family */
 }
 
 /* Pre Assaiging colors */
@@ -18,8 +20,10 @@
 }
 
 /* ---------common css----------------- */
+/* rem- define the sizes relative to font size set on root elemant */
 html {
   font-size: 80%;
+  /* having font size in % so can adust as needed */
   width: 100vw;
   overflow-x: hidden;
 }
@@ -55,7 +59,7 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 10px var(--main-color);
 }
-/* make header nonsticky since we vant use js */
+/* make header nonsticky since we wont use js */
 /* -------header and navbar---------------- */
 .header {
   display: flex;
@@ -480,8 +484,17 @@ section {
   margin-top: 2rem;
 }
 
-/* ----------------------------Footer--------------------- */
+.contact form input:valid,
+.contact form textarea:valid {
+  border-color: green;
+}
 
+.contact form input:invalid,
+.contact form textarea:invalid {
+  border-color: red;
+}
+
+/*-------------------------Footer--------------------- */
 .footer {
   position: relative;
   bottom: 0%;
