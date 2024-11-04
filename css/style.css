@@ -386,12 +386,12 @@ section {
   margin-top: 10%;
   margin-bottom: 2%;
 }
-.rating > #selected-Star {
+.rating > .selected-Star {
   color: var(--bg-color);
   font-size: 2rem;
 }
 
-.rating > #Star {
+.rating > .Star {
   display: none;
 }
 
